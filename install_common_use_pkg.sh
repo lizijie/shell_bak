@@ -55,11 +55,11 @@ make linux test
 
 # gcc
 wget -O gcc-4.9.4.tar.gz http://gcc.parentingamerica.com/releases/gcc-4.9.4/gcc-4.9.4.tar.gz \
-	&& tar -xvf gcc-4.9.4.tar.gz \
-	&& cd gcc-4.9.4 && \
-	&& ./contrib/download_prerequisites \
-	&& ./configure --prefix=/usr/gcc-4.9.4 --enable-stage1-checking=release --enable-stage1-languages=c,c++,go \
-	&& make -j 4 && make install \
+tar -xvf gcc-4.9.4.tar.gz \
+cd gcc-4.9.4 && \
+./contrib/download_prerequisites \
+./configure --prefix=/usr/gcc-4.9.4 --enable-stage1-checking=release --enable-stage1-languages=c,c++,go \
+make -j 4 && make install \
 
 # git tools
 git config --global diff.tool vimdiff
