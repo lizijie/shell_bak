@@ -1,0 +1,114 @@
+|develop|dev|
+|block|blk|
+|performance|perf|
+|memory|mem|
+|allocate|alloc|
+|utility|util|
+|file descriptor|fd|
+|extent|ext|
+|resource|res|
+|picture|pic|
+|move|mv|
+|copy|cp|
+|clear|cl|
+|manager|mgr|
+|event|evt|
+|connect|conn|
+|config|cfg|
+|server|srv|
+|address|addr|
+|request|req|
+|buffer|buf|
+|response|resp|
+|operation|opt|
+|option|opt|
+|project|proj|
+|profession|pro|
+|information|info|
+|public key|puk|
+|reference|ref|
+|record|rec|
+|value|val|
+|lenght|len|
+|collection|col|
+|array|ary|
+|iterator|itr|
+|source|src|
+|include|inc|
+|decline|dec|
+|destination|dst|
+|namespace|ns|
+|function|func|
+|action|act|
+|argument|arg|
+|parameter|param|
+|signal|sig|
+|error of last number|erron|
+|field| field|
+|property|props|
+|defines| defs|
+|object| obj|
+|system| sys|
+|message|msg|
+|document|doc|
+|application|app|
+|environment|env|
+|process|proc|
+|dispatch|disp|
+|internet|inet|
+|context|ctx|
+|receive|recv|
+|coroutine|co|
+|number|num|
+|point|ptr|
+|directory|dir|
+|dictionory|dict|
+|protocol| proto|
+|index|idx|
+|modify|mod|
+|delete|del|
+|window|wnd|
+|button|btn|
+|table|tbl|
+|label|lbl|
+|Image|img|
+|Sprite|sp|
+|texture|tex|
+|tween|tw|
+|element|elem|
+|transform|trans|
+|animation|anim|
+|material|mat|
+|vecter|vec|
+|position|pos|
+|delegate|del|
+|callback|cb|
+|compare|cmp|
+|return|rtn ret|
+|copy|cpy|
+|second|sec|
+|month|mo|
+|minute|min|
+|millisecond|ms|
+|distribution|distro|
+|backup|bak|
+|increse|incr|
+|decrese|decr|
+|cient|cli|
+|manager|mng mgr|
+|config|cfg conf|
+|coroutine|co coro|
+|signal|sig|
+|size|sz|
+|module|mod|
+|duplicate|dup|
+|function|func|fn|
+|table|tb tbl|
+|format|fmt|
+|time|tm|
+|config|cfg|conf|
+|option|opt|
+|send|snd|
+|receive|recv|
+|registe|reg|
+
