@@ -66,7 +66,7 @@ sudo apt update
 sudo apt install -y --install-recommends winehq-stable
 
 # 5. my dev tools
-sudo apt-get install -y openssh-client make cmake git ibus-table-wubi net-tools
+sudo apt-get install -y openssh-client make cmake git ibus-table-wubi net-tools libpcre3-dev libssl-dev perl build-essential curl
 git config --global core.editor "vim"
 touch /etc/profile 
 cat >> /etc/profile << EOF
