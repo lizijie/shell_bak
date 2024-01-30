@@ -1,6 +1,6 @@
 # os: debian 12
 
-# 1. isntall nvida drivers
+# isntall nvida drivers
 # amao@amao:~$ nvidia-detect 
 # Detected NVIDIA GPUs:
 # 01:00.0 VGA compatible controller [0300]: NVIDIA Corporation GK107M [GeForce GT 755M] [10de:0fcd] (rev a1)
@@ -35,7 +35,7 @@ deb https://security.debian.org/debian-security bookworm-security main contrib n
 EOF
 sudo apt update
 
-# 3. intstall Docker
+# intstall Docker
 # @ref https://docs.docker.com/engine/install/debian/#install-using-the-repository
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -43,7 +43,6 @@ sudo apt-get install -y ca-certificates curl gnupg
 sudo install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
-
 # Add the repository to Apt sources:
 echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
@@ -54,7 +53,10 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo docker run hello-world
 
-# 4. install wine
+＃ mongod-community server
+docker run --name mongodb -d -p 27017:27017 -v $(pwd)/data:/data/db mongodb/mongodb-community-server:6.0.5-ubuntu2204-20240130T085754Z
+
+# install wine
 # mirror: https://mirror.tuna.tsinghua.edu.cn/help/wine-builds/
 sudo dpkg --add-architecture i386
 sudo wget -nc -O /usr/share/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
@@ -65,7 +67,7 @@ EOF
 sudo apt update
 sudo apt install -y --install-recommends winehq-stable
 
-# 5. my dev tools
+# my dev tools
 sudo apt-get install -y vim wget openssh-client make cmake git ibus-table-wubi net-tools libpcre3-dev libssl-dev perl build-essential curl systemd-timesyncd
 # 同步网络时间
 sudo timedatectl set-ntp true
