@@ -15,7 +15,7 @@ sudo apt install -y nvidia-tesla-470-driver
 
 # 2. change apt sources.list
 # @ref https://mirror.tuna.tsinghua.edu.cn/help/debian/
-sudo mv /etc/apt/sources.list /etc/apt/sources.list_bak
+sudo cp /etc/apt/sources.list /etc/apt/sources.list_bak
 cat > /etc/apt/sources.list  << EOF
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware
@@ -53,7 +53,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo docker run hello-world
 
-＃ mongod-community server
+＃ mongod server
 docker run --name mongodb -d -p 27017:27017 -v $(pwd)/data:/data/db -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=pass mongo:4.4.28
 
 # install wine
