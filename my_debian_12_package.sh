@@ -77,8 +77,17 @@ git config --global diff.tool vimdiff
 git config --global merge.tool vimdiff
 git config --global --add difftool.prompt false
 git config --global core.autocrlf input
+cat >> ~/.vimrc << EOF
+" 显示空白字符
+set list
+" vimdiff 高亮关闭
+if &diff
+        colorscheme evening
+endif
+EOF
 touch /etc/profile 
 cat >> /etc/profile << EOF
 export PATH=$PATH:/usr/sbin/
 EOF
 source /etc/profile
+
