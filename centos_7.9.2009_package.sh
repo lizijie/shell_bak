@@ -10,6 +10,8 @@ sudo systemctl start docker
 sudo docker run hello-world
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+
+# mongo server
 sudo docker run --name mongodb -d -p 27017:27017 -v $(pwd)/data:/data/db -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=pass mongo:4.4.28
 wget https://downloads.mongodb.com/compass/mongodb-mongosh-2.1.5.x86_64.rpm
 rpm -i mongodb-mongosh-2.1.5.x86_64.rpm
