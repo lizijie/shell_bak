@@ -55,6 +55,8 @@ sudo docker run hello-world
 
 ＃ mongod server
 sudo docker run --name mongodb -d -p 27017:27017 -v $(pwd)/data:/data/db -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=pass mongo:4.4.28
+wget https://downloads.mongodb.com/compass/mongodb-mongosh_2.1.5_amd64.deb
+dpkg -i mongodb-mongosh_2.1.5_amd64.deb
 
 # install wine
 # mirror: https://mirror.tuna.tsinghua.edu.cn/help/wine-builds/
