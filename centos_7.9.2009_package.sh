@@ -1,6 +1,10 @@
 yum update -y && yum install passwd sudo -y
 sudo yum -y install wget git make vim tar zip file net-tools nc gcc tcpdump procps-ng lsof perf iperf iotop htop dstat strace sysstat collectl
 
+# upgrade gcc to v10
+sudo yum install -y centos-release-scl devtoolset-10
+source /opt/rh/devtoolset-10/enable
+
 # docker
 # @ref https://docs.docker.com/engine/install/centos/
 sudo yum install -y yum-utils
