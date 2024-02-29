@@ -1,5 +1,5 @@
 yum update -y && yum install passwd sudo -y
-sudo yum -y install wget git make vim tar zip file net-tools nc tcpdump procps-ng lsof perf iperf iotop htop dstat strace sysstat collectl
+sudo yum -y install wget git make vim tar zip file net-tools nc gcc tcpdump procps-ng lsof perf iperf iotop htop dstat strace sysstat collectl
 
 # docker
 # @ref https://docs.docker.com/engine/install/centos/
