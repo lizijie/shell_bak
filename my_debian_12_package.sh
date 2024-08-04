@@ -93,3 +93,8 @@ export PATH=$PATH:/usr/sbin/
 EOF
 source /etc/profile
 
+# 蓝牙连接异常
+sudo apt-get install pulseaudio-module-bluetooth
+sudo killall pulseaudio
+pulseaudio --start    
+sudo systemctl restart bluetooth
