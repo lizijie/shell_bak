@@ -94,6 +94,7 @@ EOF
 source /etc/profile
 
 # 蓝牙连接异常
+# ref: https://wiki.debian.org/BluetoothUser
 sudo apt-get install pulseaudio-module-bluetooth
 sudo killall pulseaudio
 pulseaudio --start    
