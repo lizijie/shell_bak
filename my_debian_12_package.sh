@@ -99,3 +99,19 @@ sudo apt-get install pulseaudio-module-bluetooth
 sudo killall pulseaudio
 pulseaudio --start    
 sudo systemctl restart bluetooth
+sudo apt install rfkill
+/usr/sbin/rfkill unblock bluetooth
+:'
+Start the bluetoothctl interactive command. Enter "help" to get a list of available commands.
+
+    Turn the power to the controller on by entering "power on". It is off by default.
+    Enter "devices" to get the MAC Address of the device with which to pair.
+    Enter device discovery mode with "scan on" command if device is not yet on the list.
+    Turn the agent on with "agent on".
+
+    Enter "pair MAC Address" to do the pairing (tab completion works).
+
+    If using a device without a PIN, one may need to manually trust the device before it can reconnect successfully. Enter "trust MAC Address" to do so.
+
+    Finally, use "connect MAC address" to establish a connection. 
+'
