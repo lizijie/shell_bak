@@ -51,6 +51,16 @@ echo \
 sudo apt-get update
 
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+# set request proxy
+# @ref https://docs.docker.com/engine/daemon/proxy/#systemd-unit-file
+sudo mkdir -p /etc/systemd/system/docker.service.d
+sudo cat > /etc/systemd/system/docker.service.d/http-proxy.conf  << EOF
+[Service]
+Environment="HTTP_PROXY=http://127.0.0.1:7890"
+Environment="HTTPS_PROXY=https://127.0.0.1:7890"
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
 sudo docker run hello-world
 
 ＃ mongod server
