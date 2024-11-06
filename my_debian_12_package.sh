@@ -82,12 +82,13 @@ sudo apt install -y --install-recommends winehq-stable
 # my dev tools
 sudo apt-get install -y vim wget openssh-client make cmake git ibus-table-wubi net-tools libpcre3-dev libssl-dev perl build-essential curl systemd-timesyncd python3 python3-pip ython3.11-venv
 # 创建python环境
-cd ~/
-python3 -m venv py3env
-source py3env/bin/activate
+python3 -m venv ~/py3env
+source ~/py3env/bin/activate
 # 删除python环境
 deactivate
 rm -f ~/py3env
+# wsl vscode调车python虚拟环境路径
+# @ref https://code.visualstudio.com/docs/python/environments
 
 # 同步网络时间
 sudo timedatectl set-ntp true
