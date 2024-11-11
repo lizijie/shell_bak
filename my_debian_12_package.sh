@@ -90,6 +90,13 @@ rm -f ~/py3env
 # wsl vscode调车python虚拟环境路径
 # @ref https://code.visualstudio.com/docs/python/environments
 
+# nodejs
+# @ref https://github.com/nodesource/distributions?tab=readme-ov-file#using-debian-as-root-nodejs-23
+curl -fsSL https://deb.nodesource.com/setup_23.x -o nodesource_setup.sh
+bash nodesource_setup.sh
+apt-get install -y nodejs
+npm install -g http-server
+
 # 同步网络时间
 sudo timedatectl set-ntp true
 ＃ 设置git环境
