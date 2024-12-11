@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 # os: debian 12
 
 # isntall nvida drivers
@@ -67,6 +66,9 @@ sudo docker run hello-world
 sudo docker run --name mongodb -d -p 27017:27017 -v $(pwd)/data:/data/db -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=pass mongo:4.4.28
 wget https://downloads.mongodb.com/compass/mongodb-mongosh_2.1.5_amd64.deb
 sudo dpkg -i mongodb-mongosh_2.1.5_amd64.deb
+
+# redis server
+sudo docker run --name redis -d -p 6379:6379 redis:7.2.6 redis-server --save 60 1 --loglevel warning
 
 # install wine
 # mirror: https://mirror.tuna.tsinghua.edu.cn/help/wine-builds/
@@ -270,4 +272,3 @@ Start the bluetoothctl interactive command. Enter "help" to get a list of availa
 
     Finally, use "connect MAC address" to establish a connection. 
 '
->>>>>>> Stashed changes
