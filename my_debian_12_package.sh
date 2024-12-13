@@ -206,6 +206,11 @@ sudo docker run --name mongodb -d -p 27017:27017 -v $(pwd)/data:/data/db -e MONG
 wget https://downloads.mongodb.com/compass/mongodb-mongosh_2.1.5_amd64.deb
 sudo dpkg -i mongodb-mongosh_2.1.5_amd64.deb
 
+# go
+echo "export GO111MODULE=on" >> ~/.profile
+echo "export GOPROXY=https://goproxy.cn" >> ~/.profile
+source ~/.profile
+
 # install wine
 # mirror: https://mirror.tuna.tsinghua.edu.cn/help/wine-builds/
 sudo dpkg --add-architecture i386
