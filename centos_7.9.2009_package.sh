@@ -7,6 +7,8 @@ source /opt/rh/devtoolset-10/enable
 
 # docker
 # @ref https://docs.docker.com/engine/install/centos/
+# @ref https://status.daocloud.io/status/docker
+# @ref https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6
 sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
