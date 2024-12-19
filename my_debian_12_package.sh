@@ -37,6 +37,8 @@ sudo apt update
 
 # intstall Docker
 # @ref https://docs.docker.com/engine/install/debian/#install-using-the-repository
+# @ref https://status.daocloud.io/status/docker
+# @ref https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6
 # Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl gnupg
