@@ -1,0 +1,6 @@
+# win11去掉显示更多选项
+管理员运行命令：reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve 重启就恢复win10右键了
+reg.exe delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /va /f 这个是恢复win11右键
+
+# 缩主机ping不到wsl的解决
+https://github.com/microsoft/WSL/issues/4171#issuecomment-929858850
