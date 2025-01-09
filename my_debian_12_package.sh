@@ -16,7 +16,7 @@ sudo apt install -y nvidia-tesla-470-driver
 # 2. change apt sources.list
 # @ref https://mirror.tuna.tsinghua.edu.cn/help/debian/
 sudo mv /etc/apt/sources.list /etc/apt/sources.list_bak
-cat > /etc/apt/sources.list  << EOF
+sudo tee /etc/apt/sources.list  << EOF
 # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware
@@ -55,7 +55,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 # set request proxy
 # @ref https://docs.docker.com/engine/daemon/proxy/#systemd-unit-file
 sudo mkdir -p /etc/systemd/system/docker.service.d
-sudo cat > /etc/systemd/system/docker.service.d/http-proxy.conf  << EOF
+sudo tee /etc/systemd/system/docker.service.d/http-proxy.conf  << EOF
 [Service]
 Environment="HTTP_PROXY=http://127.0.0.1:7890"
 Environment="HTTPS_PROXY=http://127.0.0.1:7890"
