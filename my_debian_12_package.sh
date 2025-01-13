@@ -78,8 +78,14 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 sudo docker run hello-world
 
-＃ mongod server
+# mongod server
 sudo docker run --name mongodb -d -p 27017:27017 -v $(pwd)/data:/data/db -e MONGO_INITDB_ROOT_USERNAME=user -e MONGO_INITDB_ROOT_PASSWORD=pass mongo:4.4.28
+
+# mongo database tools
+wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-debian12-x86_64-100.10.0.deb
+sudo dpkg -i mongodb-database-tools-debian12-x86_64-100.10.0.deb
+
+# mongosh
 wget https://downloads.mongodb.com/compass/mongodb-mongosh_2.1.5_amd64.deb
 sudo dpkg -i mongodb-mongosh_2.1.5_amd64.deb
 
