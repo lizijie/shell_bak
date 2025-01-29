@@ -4,3 +4,11 @@ reg.exe delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a
 
 # 缩主机ping不到wsl的解决
 https://github.com/microsoft/WSL/issues/4171#issuecomment-929858850
+
+# wsl 给分行版重新命名
+If you want to rename your WSL distro, you have to:
+1. Stop all instances of WSL
+2. Open Registry Editor and go to HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss
+3. Find the distro you want to rename, look for the DistributionName
+4. Change it as you want
+5. Start WSL again, you can also execute wsl.exe -l -v to check if it changes
