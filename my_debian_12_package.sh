@@ -104,7 +104,7 @@ sudo apt update
 sudo apt install -y --install-recommends winehq-stable
 
 # my dev tools
-sudo apt-get install -y vim wget openssh-client make cmake git ibus-table-wubi net-tools libpcre3-dev libssl-dev perl build-essential curl systemd-timesyncd python3 python3-pip ython3.11-venv
+sudo apt-get install -y vim wget openssh-client make cmake git ibus-table-wubi net-tools libpcre3-dev libssl-dev perl build-essential curl systemd-timesyncd python3 python3-pip ython3.11-venv tmux
 # 创建python环境
 python3 -m venv ~/py3env
 source ~/py3env/bin/activate
